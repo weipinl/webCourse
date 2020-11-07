@@ -1,0 +1,4 @@
+Factors that effect how fast the information is being trasnfer.
+    1. Location of the Server
+    2. How Many Trips
+    3. Size of the Files

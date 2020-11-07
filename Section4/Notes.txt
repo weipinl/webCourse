@@ -1,0 +1,16 @@
+1. header tags only goes from h1 to h6
+2. <strong> - bold 
+3. <em> - empahsis/italicize
+4. <ul> - unordered list
+5. <ol> - ordred list
+
+self-closing tags
+1. <br>  - line break
+2. <img> - image tag
+3. <hr> - horizontal line
+
+relative vs absolute path 
+1.  relative path
+    a. file protocol - cannot access outside of your computer
+2.  absolute path 
+    a. access file over the internet
