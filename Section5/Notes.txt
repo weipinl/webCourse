@@ -1,0 +1,7 @@
+Form
+1. <Form> tag 
+2. input type:
+    a. text
+    b. reset
+    c. submit
+    4. email
