@@ -1,0 +1,25 @@
+1. css stands for cascasing style sheet
+    a. selector always use the last property value
+
+2. CSS  Properties
+    a. textalign 
+    b. rgb vs rgba 
+        - rgba adds an new alpha element which is the opacity (x x x x). alpha can be in the range between 0 - 1
+
+3. h2, p 
+    a both h2 and p tag 
+
+4. h2 p 
+    a. all the p tag within h2
+
+5. h2 < p
+    a. all p tag that has a parent  of h2
+
+6. h2 + p
+    a. has p tag right after h2
+
+7. margin/padding/border
+
+8. difference between px vs em vs rem
+    a. em = however many times the relative element
+    b. rem = relation to the size of the root element (usually the html tag)

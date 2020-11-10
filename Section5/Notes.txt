@@ -4,4 +4,13 @@ Form
     a. text
     b. reset
     c. submit
-    4. email
+    d. email
+
+3. <div> tag
+    a. to divide the content
+4. <span> tag
+    a. inline element (invisible container to add style to it)
+
+5. difference between HTML vs HTML5
+    a.  make sure HTML5 is backward compatible
+    b.  HTML5 has new semantic elements

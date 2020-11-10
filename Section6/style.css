@@ -1,0 +1,61 @@
+/* Selector {
+    Property: value;
+} */
+
+* {
+    text-align: right;
+} 
+/* * = all element */
+
+body {
+    background-image: url(background.jpeg);
+    background-size: cover;  
+}
+
+h2  {
+    color: red;
+    text-align: center;
+    border: 5px solid rgba(255, 176, 170, .5);
+    cursor:  pointer;
+}
+p {
+    color: pink;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: 'Poiret One', cursive;
+    ;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block
+}
+
+.webtext {
+    border: 5px solid green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background: rgba(0, 255, 0, 0.2);
+}
