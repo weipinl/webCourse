@@ -1,0 +1,7 @@
+bootstrap container
+    1. grid system
+        a. # of column = 12
+        b. sm,md,lg,xl
+
+Resources
+    1. https://zerotomastery.io/resources/ 

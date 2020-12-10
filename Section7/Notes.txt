@@ -1,0 +1,52 @@
+Resources:
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Flex property:
+    1. justify-content
+        a. flex-start: Items align to the left side of the container.
+        b. flex-end: Items align to the right side of the container.
+        c. center: Items align at the center of the container.
+        d. space-between: Items display with equal spacing between them.
+        e. space-around: Items display with equal spacing around them.
+
+    2. align-Items
+        a. flex-start: Items align to the top of the container.
+        b. flex-end: Items align to the bottom of the container.
+        c. center: Items align at the vertical center of the container.
+        d. baseline: Items display at the baseline of the container.
+        e. stretch: Items are stretched to fit the container.
+
+    3. flex-direction
+        a. row: Items are placed the same as the text direction.
+        b. row-reverse: Items are placed opposite to the text direction.
+        d. column: Items are placed top to bottom.
+        e. column-reverse: Items are placed bottom to top.
+    
+    Note 
+        1. when you set the direction to a reversed row or column, start and end are also reversed.
+        2. when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal.
+
+    4. order
+        1. Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the order property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
+
+    5. align-self
+        a. This property accepts the same values as align-items and its value for the specific item.
+
+    6. flex-wrap
+        a. nowrap: Every item is fit to a single line.
+        b. wrap: Items wrap around to additional lines.
+        c. wrap-reverse: Items wrap around to additional lines in reverse.
+
+    7. flex-flow = combination of both flex-direction and flex-wrap
+        a. flex-flow: row wrap
+
+    8. align-content:
+        a. flex-start: Lines are packed at the top of the container.
+        b. flex-end: Lines are packed at the bottom of the container.
+        c. center: Lines are packed at the vertical center of the container.
+        d. space-between: Lines display with equal spacing between them.
+        e. space-around: Lines display with equal spacing around them.
+        f. stretch: Lines are stretched to fit the container.
+
+    9. transition
+    10. transform
