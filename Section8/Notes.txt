@@ -5,3 +5,10 @@ bootstrap container
 
 Resources
     1. https://zerotomastery.io/resources/ 
+
+Add this to the head tag to let the page knows to work on mobile first 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<hr> = horizontal line
