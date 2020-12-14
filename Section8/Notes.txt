@@ -12,3 +12,13 @@ Add this to the head tag to let the page knows to work on mobile first
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <hr> = horizontal line
+
+https://weipinl.github.io/webCourse/Section8/startupLandingPage/index.html
+
+anime.css
+    - add animation to our website
+    - include the following to the header tag
+    - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+creative tim 
+    - use bootstrap, but makes it better
