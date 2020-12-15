@@ -1,0 +1,59 @@
+Flexbox vs css grid
+    1. Flexbox is good when it is one diemsional (only cares about the column)
+    2. css gride is godo when it is two dimensional (both columns and rows ex. image gallery, or profile projects)
+
+grid system 
+    1. recommended to use fr instead of (% or pixel)
+        a. 1 fr = 1 fraction (1 per column)
+        b. fr resizes
+    2. grid cheat sheet (https://grid.malven.co/)
+    3. If grid items aren't explicitly placed with grid-area, grid-column, grid-row, etc., they are automatically placed according to their order in the source code. We can override this using the order property, which is one of the advantages of grid over table-based layout.
+
+1. css properties
+    a. grid-template-columns : how many columns we want to use
+        ex. grid-template-columns: 300px 300px  (2 grids of 300px to column)
+        * can use repeat function to specify how many times you want to repeat it
+            * grid-template-columns: repeat(3, 1fr); which is the same as 1fr 1fr 1fr
+        * can use "auto" it would use whatever spaces it have 
+            * grid-template-columns: auto 1fr 2fr; 
+            * auto can be think of it as the max size of the content
+        * most commonly use format (responsive grid system)
+            *grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                * auto fill the space it has and has minimum of 200px and maximum of 1fr
+                * it would auto adjust based on size of our viewport
+    b. gap: how much gap we want between the grid
+    c. grid-template-rows: how many rows 
+        * if there is more rows than specify, it would just start repeating
+    d. justify content (same as flex box)
+        * can use inspect tool. justify the content accordingly ex start, end, stretch
+    e. align-items
+
+    individual item (the grid would have differet sizes):
+        a. grid-column (can specify where it starts and where it ends)
+            1. grid-column-start: 1;
+            2. grid-column-end: 3;
+            3. grid-column: 1/3; /* same as the above two lines, grid-column: start/end
+            4. grid-column: span 2; /* span across two grids */
+        b. grid-row: 1/3;
+            1. start at 1 and ends at 3
+        c. justify-self: when it is dealing with individual item
+    f. 500vh; /*viewport height, for making thing responsive for height */
+        a. can use vh inside of container
+
+Media Queries
+    1. allow us to create responsive website (https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+    2. how we displaying the website based on the sizes of the screen
+    example: (font size decreases and remove padding when the width surpassed 600px)
+    @media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+To make a navigation bar sticky 
+sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
