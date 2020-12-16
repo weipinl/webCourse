@@ -1,0 +1,18 @@
+https://www.w3schools.com/js/js_htmldom.asp
+
+Method for documents
+1. getElementsByTagName
+2. getElementsByClassName
+3. getElementById 
+4. document.querySelector("h1").style (brings up the issue of seperation of concern)
+5. document.querySelector("li").classList.add("done"); // add the "done" class to li element
+6. var h1 = document.querySelector("h1")  //save the first h1 tag to the variable h1
+   h1.className = "coolTitle"; //add the coolTitle class to h1 variable
+
+
+var button = document.getElementsByTagName("button")[0]; //select the botton instead of the array
+
+button.addEventListener("mouseenter", function() {  
+    console.log("Click!!!");
+});  //first is the event, and then function
+
