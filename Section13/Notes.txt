@@ -37,3 +37,34 @@
 9. symbol 
 
 // symbol are use to create unique type, so you are sure there won't be any conflict
+
+10. reference type 
+
+11. context vs scope
+
+12. instantiation 
+
+13 Pass by reference vs pass by value
+    A. object = pass by reference 
+    B. primitive type = pass by value
+
+14. type coercion 
+    A. happens when you use ==  //compare the two values, and coerce one type to the other
+    B. should use ===, it is tricky to use type coercion in javascript
+
+15. //flat() 
+
+16. flatMap()
+
+17. fromEntries
+
+18. try/catch block
+
+19. for of loop
+    A. works with something thats iterable. (ex string, array)
+    B. does NOT work on object
+    C. iterating
+
+20. for in loop
+    A. works on object
+    B. enumerating

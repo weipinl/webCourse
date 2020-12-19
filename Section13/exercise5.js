@@ -27,6 +27,15 @@ const array = [
 
 ];
 
+//BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+
+const bonusArray = array.map(user =>{
+  user.items = user.items.map(item => {
+    return item + '!';
+  })
+  return user;
+})
+
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
 
 const newArray = [];
@@ -41,17 +50,13 @@ console.log(newArray);
 //Create an array using map that has all the usernames with a "? to each of the usernames
 
 const mapArray = array.map(user => {
-  //this way would work too
-  //return user.username + "?";
-  let {username} = user;
-  return `${username}?`
+  return user.username + "?";
  })
 
 //Filter the array to only include users who are on team: red
 
 const filterArray = array.filter(user => {
-  let {team} = user;
-  return team === "red";
+  return user.team === "red";
 })
 console.log(filterArray);
 
@@ -79,5 +84,4 @@ const answer = array.map(user => {
 	return user;
 })
 console.log(answer);
-
 
