@@ -1,0 +1,13 @@
+1. ls = list everything in the current directory
+2. pwd = current directory
+3. cd = go into some directory
+4. clear = clear the terminal
+5. cd ~ = user directory
+6. open . = open the folder that we are currently in 
+7. mkdir webapp = make a folder called webapp
+8. touch index.html = create index.html file
+9. open index.html = open the file 
+10. open -a "Sumblime Text" = open -a "appName"
+11. mv index.html about.html = moving one file to another by changing the name and replace the original one 
+12. rm about.html = remove the file
+13. rm -r webapp = to remove directory

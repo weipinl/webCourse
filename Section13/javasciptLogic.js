@@ -51,32 +51,31 @@ function answer1(someArray) {
 
 console.log(answer1(sortedArray))
 
-//idea
-// function answer2(someArray) {
-//     for (i = 0; i < someArray.length; i++) {
-//         if (it's the first digit or same as the next one) {
-//             push it to tempArray
-//         } else if (if the current number is different than the previous one, reset the temp and push it to result) {
+const arr2 = [1,"2","3",5,3,6,"7","4","6",4];
+let newArray = [];
+let sorted = arr2.sort((a,b) => a - b); 
+console.log(sorted)
+const someNumber = sorted.filter(element => typeof(element) === 'number');
+console.log(someNumber);
+const someArray = sorted.filter(element2 => typeof(element2) === 'string');
+console.log(someArray);
+newArray.splice(0, 0, someNumber, someArray);
+console.log(newArray);
 
-//         } else {
-//             push the current number to result
-//         }
-//     }
-// }
+const numbers = [1,2,3,4,5,6,7];
+const resultArray = []
 
-// function answer2(someArray) {
-//     debugger
-//     for (i = 0; i<someArray.length; i++) {
-//         if ((i === 0) || (someArray[i] === someArray[i+1])){ //if it's the first number or if the current num is the same as the next number
-//             tempArray.push(someArray[i]);
-//         } else if (someArray[i] !== someArray[i-1]) {
-//             result.push(tempArray);
-//             temp = [];
-//         } else {
-//             result.push(someArray[i]);
-//         }
-//     }
-//     return result;
-// }
+function findTwoSum (someArray, target) {
+    for (i = 0; i < someArray.length; i++) {
+        for (nextIndex = i + 1; nextIndex < someArray.length; nextIndex++) {
+            if ((someArray[i] + someArray[nextIndex]) === target) {
+                console.log(`i = ${someArray[i]}, and nextIndex = ${someArray[nextIndex]}`);
+                resultArray.push(someArray[i],someArray[nextIndex]);
+                return resultArray
+            } 
+        }
+    }
+    console.log('target number is not acheievable with these number')
+}
 
-// console.log(answer2(sortedArray));
+console.log(findTwoSum(numbers, 13))

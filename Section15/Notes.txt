@@ -1,0 +1,25 @@
+1. git clone http://someaddress
+    A. this would allow us to communicate with git hub
+
+2. git status 
+    A. shows us the untrack files
+
+3. git add somefile.html
+
+4. git commit -m "some message here 
+
+5. git push 
+
+6. git pull  = to pull whatever it's the latest
+
+7. git branch = to see what branches are ther everything
+
+8. git brand someBranchName = create a new branchName
+
+9. git checkout someBranchName = change it to specify branchname
+
+10. git checkout -b test = to create a new branch and access it
+
+11. git merge master (merge whatever in master to the current branch)
+
+12. git push origin test  (push it to test branch)
