@@ -1,0 +1,49 @@
+NPM is a place where people can share their javascript code 
+    - contains javascript file and json (meta file) file
+
+Benefit
+    - expertise from other 
+
+3 types of npm package
+    1. front end NPM (JQuery)
+    2. gives new command to use on command line 
+    3. back end (ex Node.js)
+
+ All package would have the following.
+    1. HTML + CSS + javascript
+    2. Github Repo + Git
+    3. Package.json file
+
+npm init 
+    - this command creates a package.json file in your directory
+
+whats .json
+    - a file format
+
+to get the latest version of NPM 
+    - npm install -g npm@latest
+
+two good NPM packages to use 
+    1. live-server
+    2. lodash
+
+NPM allows you to install packages in two way
+    1. globally
+        A. you can use it anywhere in your computer
+        B -g (ex. npm install -g live-server)
+        C. can be use in terminal
+    2. locally
+        A. NPM would install package that only can be use in that folder
+        B. use it in javascript file
+        C. npm install lodash
+
+semver: Semantic version
+    1. 4.17.4
+        a. the last 4 is the means the patch release
+        b. 17 is the minor release
+        c. 4 is the major release
+
+allow you to run script under "script" {
+    "build: "browserify script.js > bundle.js
+}
+    a. can run it in terminal like "npm run build"

@@ -20,3 +20,17 @@ Extra Javascript Practice
 3. http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/
 
 Section 16 Open Source Project <- Revisit>
+
+Lesson 199 
+
+    https://news.ycombinator.com/
+    https://softwareengineeringdaily.com/
+    https://www.producthunt.com/
+
+Lesson 207 
+
+    Creating a profolio
+
+Logo Maker
+
+    a. Hatchful

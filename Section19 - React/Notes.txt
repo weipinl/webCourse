@@ -1,0 +1,78 @@
+Principle
+    1. Thinking in component (Atom -> Molecules -> Organism -> Templates -> Pages)
+    2. One way Data flow
+        A. only the children knows about the change
+        B. direction of the flow is always downstream
+    3. Virtual DOM - javascript object
+    4. Great ECO-system 
+    5. npm install -g create-react-app
+
+serviceWorker - use it for progressive web app 
+
+tachyons
+    1. gives us classes that we can use
+    Example
+        <div class = "f1 tc">
+        {/* !-- font f1 and text center */}
+
+<Hello greeting={'Hello' + 'React Ninja'}/>  
+    gives a "greeting" props to hello
+
+We can treat react as a function
+
+JSX can only return one thing!
+
+ 
+const Card = ({ name, email, id }) => {  //receiving props and we destructuring the props. cleaner code
+    return (
+        <div className='tc bg-light-green br3 pa3 ma2 grow bw2 shadow-5'>
+            <img alt = 'robot' src = {`https://robohash.org/${id}?200x200`}/>
+            <div>
+                <h2>{name}</h2>
+                <p>{email}</p>
+            </div>
+        </div>
+    )
+}
+
+React Fragment
+    - return multiple element back 
+    - shorthand syntax for Fragments, which looks like empty tags: <> and </>.
+    ex.
+    function FAQ() {
+    return (
+        <>
+            <p>Q. What is React?</p>
+            <p>A. A JavaScript library for building user interfaces</p>
+            <p>Q. How do I render sibling elements?</p>
+            <p>A. Use Fragments</p>
+        </>
+    );
+}
+
+props
+    1. properties that we pass it down 
+    2. input that we get, and we never modify them
+
+pure componenet = they receive something and they return something 
+
+STATE
+    1. the description of your app
+    2. an object
+    3. state is something it can change and effect our app
+    4. usually lives in the parents component
+
+parents feed state to a child component and as soon as the child receive the component, it turns into a property. it can never change that property
+STATE >> props
+
+everytime you make your own function within compoenent, you should have = (event) => {} //this is to make sure that "this" is referring to where it is created
+
+    onSearchChange = (event) => {
+        const filteredRobot = this.state.robots.filter(robot => {
+            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        })
+
+        console.log(filteredRobot);
+    }
+    
+this.setState({ searchfield: event.target.value }) //if you want to change state
