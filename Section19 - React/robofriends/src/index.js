@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import Card from './Card'; it's not being used anymore
 //import CardList from './CardList'; it's now in App.js file
-import App from './App' //would be the father of all components
+import App from './containers/App' //would be the father of all components
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 

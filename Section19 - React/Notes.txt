@@ -76,3 +76,16 @@ everytime you make your own function within compoenent, you should have = (event
     }
     
 this.setState({ searchfield: event.target.value }) //if you want to change state
+
+lifecycle method react (https://reactjs.org/docs/react-component.html)
+    1. goes in order, for eample 
+        A. constructor()
+        B. static getDerivedStateFromProps()
+        C. render()
+        D. compoenentDidMount()
+    2. mounting is the start of an app
+
+fetch() is a window obj
+
+Error boundary:
+    1. 
