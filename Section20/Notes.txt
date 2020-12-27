@@ -1,0 +1,74 @@
+HTTP 
+    - allow fetching of documents
+    - can use query string to send the data or body of the request
+
+Request
+    1. GET 
+        a. get something from the server
+    2. POST
+        a. add something to the server
+    3. PUT
+        a. update the server 
+    4. DELETE
+        a. delete something from the server
+
+Response
+    1. HTTP Status Message 
+        a. 2xx - successful
+        b. 4xx - Client Error
+    2. Data
+        a. html
+
+HTTPS
+    - hypertext transfer protocol secure
+    - it is encrypted, only client and server knows 
+    - uses TLS and SSL 
+
+JSON
+    - we can convert any Javascipt obj into JSON and send JSON to the server
+    - we can only send text through HTTP server unless we uses JSON
+    - JSON: JavaScript Object Notation
+    - JSON is a syntax for string and exchanging data
+    - JSON is text, written with javascript object notation
+
+XML and JSON can be use to receive data from the web server
+
+Two ways JavaScript parse JSON 
+    1. JSON.parse()
+        a. var obj = JSON.parse{'{"name"."John", "age":30}'}
+    2. JSON.stringify()
+        a. var myJSON = JSON.stringify(obj);
+
+Note: Originally, the only way to submit some form data to a server was through the <form> tag in HTML. As we have learned, it can do a POST or a GET request. With JSON you can now grab the contents of the <input> in a form and submit those with JSON instead of as a form data. You can now submit to the server whenever you want without it necessarily being a <form>, through AJAX
+
+AJAX
+    - update the page without reloading the page
+    - fetch('/users')
+    - only update small page of window
+    - ex. fetch('http://jsonplaceholder.typicode.com/users').then(respoose=> response.json()).then(data => console.log(data))
+    - have to do .then if it returns a Promise
+    - fetch --> .json()
+    - single page application
+
+Promises
+    - a promise is an object that may produce a single value some time in the future
+        a. either a resolved value, or a reason that it's not resolved (rejected)
+    - 3 possible states
+        1. fulfilled
+        2. rejected
+        3. pending
+    - serves the same purposes as callback
+    - When we use Promises 
+        a. use for asynchronous program (don't want javascript to block your code)
+    - can only succeed for fail ONCE !
+Example
+    Promise.all(urls.map(url => 
+  fetch(url).then(people => people.json())
+))
+  .then(array => {
+    console.log('1', array[0])
+    console.log('2', array[1])
+    console.log('3', array[2])
+    console.log('4', array[3])
+  })
+  .catch(err => console.log("fix it!"))
