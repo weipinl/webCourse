@@ -72,3 +72,29 @@ Example
     console.log('4', array[3])
   })
   .catch(err => console.log("fix it!"))
+
+
+Async Await
+    - async function returns a promise
+    - it makes code easier to read
+
+
+Object Spread Operator
+    - const animals = {
+        tiger: 23, 
+        lion: 5, 
+        monkey: 2
+    }
+    - const { tiger, ...rest } = animals;
+
+Finally
+    - do something after the promises are finished
+    - no matter what, after everything is done for promises, finally would be call
+
+for await of 
+
+Promise.all only resolve IF all the promises within it are resolved, if one of them is rejected, then it would throw an error 
+
+allSettled()
+    - doesn't care about resolve/reject unlike Promise.all()
+    - wait until everything is complete 

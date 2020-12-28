@@ -27,10 +27,10 @@ Promise.reject('failed')
 // #5) Use Promise.all to fetch all of these people from Star Wars (SWAPI) at the same time.
 // Console.log the output and make sure it has a catch block as well.
 const urls = [
-  'http://swapi.dev/api/people/1',
-  'http://swapi.dev/api/people/2',
-  'http://swapi.dev/api/people/3',
-  'http://swapi.dev/api/people/4'
+  'https://swapi.dev/api/people/1',
+  'https://swapi.dev/api/people/2',
+  'https://swapi.dev/api/people/3',
+  'https://swapi.dev/api/people/4'
 ]
 
 Promise.all(urls.map(url => 
