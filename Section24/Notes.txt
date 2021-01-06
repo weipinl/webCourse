@@ -1,0 +1,15 @@
+Nodejs
+1. globalThis === window
+    A. globalThis works outside of the browser as well
+    B. window is part of the browser
+    C. unified variables across different platform/system 
+
+2. export/import works on node version 12 or above
+3. three types of module 
+    A. const c = required('./script.js)
+    B. const c = required('fs')
+
+
+Express
+1. checks line by line
+2. put = updating
