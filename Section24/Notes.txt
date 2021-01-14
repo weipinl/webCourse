@@ -13,3 +13,39 @@ Nodejs
 Express
 1. checks line by line
 2. put = updating
+
+Restful API
+1. follows the rules and everyone can agreed upon 
+2. get -receive resource
+3. post - create a resource
+4. put - update 
+5. stateless - calls can be made independently of one another, and each call contains all the data neccessary to complete itself successfully
+
+types of requests
+1. req.query 
+    - what we get when we use get 
+2. req.body
+    - bodyparser middleware
+3. req.headers
+4. req.params
+    - use the parameter of the URL
+
+FS
+1. if no encoding is specified, then the raw buffer is returned
+
+const fs = require('fs'); //fs = filesystem
+
+fs.readFile('./hello.txt', (err, data) => {
+    if (err) {
+        console.log('errrr');
+    }
+    console.log(data)
+})
+
+1. readFile is asynchronous 
+    A. that's why it has callback function
+
+2. readFileSync is synchronous
+    A. don't do anything just wait here, until im done ill assign it and you can keep going 
+
+usually we would use readFile so we won't block the execution

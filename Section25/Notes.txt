@@ -1,0 +1,3 @@
+Access-Contro-Allow-Origin
+    1. Google security feature. Prevent hacker to get information.
+    2. have to set it to no-cors (npm packckage cors)

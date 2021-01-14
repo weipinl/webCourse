@@ -1,0 +1,71 @@
+- DBMS - database management system 
+- relational databases
+    1. two or more tables with columns and rows
+    2. schema - must be define if you want to store data 
+    3. primary key - something that identify a row 
+
+- SQL 
+    1. allow us to communicate with the database 
+
+- NOSQL/ Non relational database  
+    1. build an application without defining a schema 
+    2. if the data requirement is not clear 
+    3. offer greater flexibility 
+    4. document oriented
+    5. MongoDB query lanaguage is use to communicate with the database
+
+Relational vs Non relational
+    1. a relational datbase table organizes structured data fields into defined columnes
+    2. A Non-relational database does NOT incorporate the table model. Instead, data can be stored in a single document file
+
+
+SQL: CREATE table  
+- CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype) 
+- \d
+    a. to check the schema and table 
+- \q 
+    a. back to terminal
+
+SQL: Insert into + Select  
+- INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
+- SELECT name, age, birthday FROM users;
+- SELECT * FROM users; (* wildcard symbol)
+
+SQL: Alter table
+- ALTER TABLE table_name ADD column datatype;
+
+SQL: UPDATE 
+- UPDATE table_name SET some_column = some_value WHERE some_column = some_value;
+
+SQL conditional statement
+- SELECT * FROM users WHERE name LIKE 'A%'
+    a. LIKE gives us a condition 
+    b. % returns everything after
+- SELECT * FROM users ORDER BY score DESC; // ORDER BY DECENDING, ASC = ascending
+
+SQL FUNCTION
+- SELECT AVG(score) FROM users; //get the average of the score
+- SELECT SUM(age) FROM users;
+- SELECT COUNT(name) FROM users;
+
+SQL joining table
+example:
+
+select * from users join login on users."name"  = login.name;
+
+    CREATE TABLE login (
+        ID serial NOT NULL PRIMARY KEY, 
+        secret VARCHAR (100) NOT NULL, 
+        name text UNIQUE NOT NULL
+    );
+
+
+UNIQUE - if the name already exist, you cannot use it 
+Primary key is always unique
+
+public | login_id_seq | sequence | postgres
+- login_id_seq, contains primary key
+
+
+SQL DELETE / drop table
+- DELETE FROM table_name WHERE some_column = some_value
