@@ -1,0 +1,11 @@
+Node environmental variable 
+- process.env.PORT 
+    to set a specific port. ex #{process.env.PORT}.
+        example:
+            const PORT = process.env.PORT
+            app.listen(PORT, () => {
+                console.log('Server is listening to port ${PORT}')
+            })
+    we would have to inject it first in the following way
+    Bash example :
+         PORT=3000 node server.js

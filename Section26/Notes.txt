@@ -68,4 +68,10 @@ public | login_id_seq | sequence | postgres
 
 
 SQL DELETE / drop table
-- DELETE FROM table_name WHERE some_column = some_value
+- DELETE FROM table_name WHERE some_column = some_value;
+- DROP TABLE login;
+
+Transaction 
+    1. if one fail, then all fail
+    2. use Transaction when you need to do more than two thing
+    3. trx object to do operation
